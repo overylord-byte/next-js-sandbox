@@ -52,6 +52,14 @@ export default function Home() {
           >
             Server cache sandbox
           </Link>
+          <Link
+              className="flex w-full text-center items-center justify-center gap-2 rounded-full bg-foreground px-5 py-2 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
+              href="/cart"
+              target="_blank"
+              rel="noopener noreferrer"
+          >
+            Cart
+          </Link>
         </div>
       </main>
     </div>
