@@ -1,7 +1,7 @@
 export type OrderState = 'DRAFT' | 'PROCESSING' | 'READY' | 'FAILED' | 'EXPIRED';
 
 export interface OrderModel {
-    orderId: string;
+    id: string;
     version: number;
     state: OrderState;
     data: Record<string, unknown>;
@@ -46,6 +46,5 @@ export interface CreateOrderRequest {
 
 export interface CreateOrderResponse {
     orderId: string;
-    streamUrl: string;
     order: OrderModel;
 }

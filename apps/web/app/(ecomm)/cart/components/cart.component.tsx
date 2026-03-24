@@ -10,7 +10,7 @@ const Cart: FC<CartProps> = ({ order }) => {
         <div style={{ padding: 16, border: '1px solid #ccc', borderRadius: 8 }}>
             <h2>Order</h2>
 
-            <div><b>ID:</b> {order.orderId}</div>
+            <div><b>ID:</b> {order.id}</div>
             <div><b>Version:</b> {order.version}</div>
             <div><b>State:</b> {order.state}</div>
             <div><b>Created:</b> {new Date(order.createdAt).toLocaleString()}</div>
@@ -20,6 +20,7 @@ const Cart: FC<CartProps> = ({ order }) => {
             <pre
                 style={{
                     background: '#f5f5f5',
+                    color: '#000',
                     padding: 12,
                     borderRadius: 6,
                     overflowX: 'auto'

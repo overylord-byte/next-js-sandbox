@@ -5,7 +5,7 @@ import {OrderModel} from "@repo/contracts/order.model";
 import Cart from "@/app/(ecomm)/cart/components/cart.component";
 
 const stubOrder: OrderModel = {
-    orderId: 'ord_stub_123',
+    id: 'ord_stub_123',
     version: 1,
     state: 'DRAFT',
     createdAt: Date.now(),
